@@ -15,6 +15,7 @@ from the web server into the report.
 * Vagrant
 * VirtualBox
 * Fullstack_nanodegree-vm 
+* newsdata.sql file
 * create local database:"news" 
 
 ###Setup Project with the following commands:
