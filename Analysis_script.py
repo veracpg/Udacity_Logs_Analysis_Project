@@ -16,7 +16,7 @@ query_popAuthors = "SELECT authors.name, sum(article_view.views) AS views FROM a
 # On which days did more than 1% of requests lead to errors?
 
 query_errorLog_title = "On which days did more than 1% of requests lead to errors?"
-query_errorLog = "SELECT * FROM error_log_view WHERE \"Percent Error\" > 1"
+query_errorLog = "SELECT * FROM error_view WHERE \"Percent Error\" > 1"
 
 
 # Connect to DB = news
