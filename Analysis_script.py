@@ -34,8 +34,9 @@ def connect(database_name="news"):
 def get_query_results(query):
     db, cursor = connect()
     cursor.execute(query)
+    results = cursor.fetchall()
     db.close()
-    return cursor.fetchall()
+    return results
 
 
 # Print Results
