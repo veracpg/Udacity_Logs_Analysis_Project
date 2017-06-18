@@ -1,4 +1,4 @@
-# Python 2.7.10
+#!/usr/bin/env python
 
 import psycopg2
 
@@ -34,8 +34,8 @@ def connect(database_name="news"):
 def get_query_results(query):
     db, cursor = connect()
     cursor.execute(query)
-    return cursor.fetchall()
     db.close()
+    return cursor.fetchall()
 
 
 # Print Results
