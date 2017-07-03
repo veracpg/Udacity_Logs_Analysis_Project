@@ -44,7 +44,7 @@ def get_query_results(query):
 def print_query_results(query_results):
     print (query_results[1])
     for index, results in enumerate(query_results[0]):
-        print (index + 1, "name:", results[0], "views:", str(results[1]))
+        print (index + 1, results[0], str(results[1]))
 
 
 def print_error_results(query_results):
@@ -61,5 +61,8 @@ if __name__ == '__main__':
 
     # Print
     print_query_results(popArticles_results)
+    print("-" * 70)
     print_query_results(popAuthors_results)
+    print("-" * 70)
     print_query_results(errorLog_results)
+    print("-" * 70)
